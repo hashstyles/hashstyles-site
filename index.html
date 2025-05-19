@@ -13,17 +13,18 @@
       color: #333;
     }
   header {
-    height: 20vh; /* 20% of viewport height */
+    height: 30vh; /* limits height to 30% of screen */
     background-image: url('assets/images/banner.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
-    position: relative;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0; /* remove excess padding */
+    overflow: hidden;
+    text-align: center;
   }
     header .logo {
       width: 120px;
