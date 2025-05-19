@@ -13,24 +13,29 @@
       color: #333;
     }
   header {
-    height: 30vh; /* 30% of screen height */
+    height: 30vh; /* limit banner height */
     background-image: url('assets/images/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #222;
     position: relative;
-    overflow: hidden;
+    color: #222;
   }
     header .logo {
-      width: 120px;
-      margin-bottom: 15px;
+      width: 100px;
+      margin-bottom: 8px;
+    }
+
+    header .tagline {
+      font-size: 0.9rem;
+      color: #444;
+      margin-bottom: 10px;
     }
     header h1 {
       font-size: 2.5rem;
@@ -42,10 +47,11 @@
       margin: 0.5rem 0;
     }
     .btn {
+      margin-top: 12px;
       background-color: #C13584;
       color: white;
       border: none;
-      padding: 12px 24px;
+      padding: 10px 20px;
       font-size: 1rem;
       border-radius: 5px;
       text-decoration: none;
@@ -100,7 +106,7 @@
 
 <header>
   <img src="assets/images/logo.png" alt="Hash Logo" class="logo">
-  <div class="tagline">#Spark Your Style</div>
+  <div class="tagline">#SparkYourStyle</div>
   <h1>Wear what feels right.<br>Look how you love.</h1>
   <p>Comfortable kurtis for your everyday and special days.</p>
   <a class="btn" href="https://www.instagram.com/hash" target="_blank">Shop Now</a>
