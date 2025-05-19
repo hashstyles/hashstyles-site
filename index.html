@@ -32,7 +32,31 @@
       width: 200px;
       margin-bottom: 1px;
     }
-
+  .image-logo {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+  }
+  .image-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  } 
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #C13584;
+  text-align: center;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.4); /* Optional: darken background for better readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+  
+    
     header .tagline {
       font-size: 0.9rem;
       color: #C13584;
@@ -111,11 +135,15 @@
 <body>
 
 <header>
+  <div class="image-logo">
     <img src="assets/images/logo.png" alt="Hash Logo" class="logo">
-    <div class="tagline">#Spark Your Style</div>
-    <h1>Wear what feels right.<br>Look how you love.</h1>
-    <p>Comfortable kurtis for your everyday and special days.</p>
-    <a class="btn" href="https://www.instagram.com/hash" target="_blank">Shop Now</a>
+    <div class="overlay-text">
+      <div class="tagline">#Spark Your Style</div>
+    </div>
+  </div>
+  <h1>Wear what feels right.<br>Look how you love.</h1>
+  <p>Comfortable kurtis for your everyday and special days.</p>
+  <a class="btn" href="https://www.instagram.com/hash" target="_blank">Shop Now</a>
 </header>
 
 <section class="section">
