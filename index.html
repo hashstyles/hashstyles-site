@@ -15,37 +15,37 @@
 
     header {
       background-color: #F2DABD;
-      padding: 20px;
+      padding: 30px 20px 50px;
       text-align: center;
-    }
-
-    .image-logo {
       position: relative;
-      width: 200px;
-      margin: 0 auto;
     }
 
-    .image-logo img {
+    .logo-container {
+      position: relative;
+      display: inline-block;
+      width: 200px;
+    }
+
+    .logo-container img {
       width: 100%;
       height: auto;
-      object-fit: contain;
     }
 
     .tagline {
       position: absolute;
-      bottom: 0;
-      right: 5px;
+      right: 8px;
+      bottom: 5px;
       font-size: 0.8rem;
       color: #C13584;
     }
 
     .hero-text {
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     .hero-text h1 {
       font-size: 1.5rem;
-      margin-bottom: 8px;
+      margin: 8px 0;
     }
 
     .hero-text p {
@@ -131,8 +131,8 @@
 <body>
 
 <header>
-  <div class="image-logo">
-    <img src="assets/images/logo.png" alt="Hash Logo">
+  <div class="logo-container">
+    <img src="assets/images/logo.png" alt="Hash Logo" />
     <div class="tagline">#Spark Your Style</div>
   </div>
   <div class="hero-text">
