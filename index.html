@@ -15,57 +15,51 @@
 
     header {
       background-color: #F2DABD;
-      padding: 0 20px 20px;
+      padding: 20px;
       text-align: center;
     }
 
     .image-logo {
       position: relative;
-      width: 100%;
-      max-width: 500px;
+      width: 200px;
       margin: 0 auto;
     }
 
     .image-logo img {
       width: 100%;
+      height: auto;
       object-fit: contain;
     }
 
     .tagline {
       position: absolute;
-      bottom: 5px;
-      right: 10px;
-      font-size: 0.9rem;
+      bottom: 0;
+      right: 5px;
+      font-size: 0.8rem;
       color: #C13584;
     }
 
-    @media(min-width: 768px) {
-      .tagline {
-        bottom: 15px;
-        right: 30px;
-        font-size: 1rem;
-      }
+    .hero-text {
+      margin-top: 10px;
     }
 
-    header h1 {
+    .hero-text h1 {
       font-size: 1.5rem;
-      margin: 10px 0 5px;
+      margin-bottom: 8px;
     }
 
-    header p {
-      font-size: 1rem;
-      margin: 0 0 15px;
+    .hero-text p {
+      font-size: 0.95rem;
+      margin-bottom: 12px;
     }
 
     .btn {
       background-color: #C13584;
       color: white;
       padding: 10px 20px;
-      border: none;
-      font-size: 1rem;
       border-radius: 5px;
       text-decoration: none;
-      display: inline-block;
+      font-size: 1rem;
     }
 
     .section {
@@ -141,9 +135,11 @@
     <img src="assets/images/logo.png" alt="Hash Logo">
     <div class="tagline">#Spark Your Style</div>
   </div>
-  <h1>Wear what feels right.<br>Look how you love.</h1>
-  <p>Comfortable kurtis for your everyday and special days.</p>
-  <a class="btn" href="https://www.instagram.com/hash" target="_blank">Shop Now</a>
+  <div class="hero-text">
+    <h1>Wear what feels right.<br>Look how you love.</h1>
+    <p>Comfortable kurtis for your everyday and special days.</p>
+    <a class="btn" href="https://www.instagram.com/hash" target="_blank">Shop Now</a>
+  </div>
 </header>
 
 <section class="section">
