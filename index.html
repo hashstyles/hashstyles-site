@@ -127,6 +127,20 @@
       font-weight: bold;
       color: #C13584;
     }
+    form {
+      max-width: 400px;
+      margin: auto;
+      text-align: left;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
   </style>
 </head>
 <body>
@@ -168,18 +182,42 @@
   <h2>Explore Our Collections</h2>
   <div class="collections">
     <div class="product">
-      <img src="assets/images/work_ready_styles_blue.png" alt="Work-Ready Styles">
-      <p>Work-Ready Styles</p>
+      <a href="https://www.instagram.com/hashstylesin" target="_blank">
+        <img src="assets/images/work_ready_styles_blue.png" alt="Work-Ready Styles">
+        <p>Work-Ready Styles</p>
+      </a>
     </div>
     <div class="product">
-      <img src="assets/images/festive_wear.png" alt="Easy Festive Wear">
-      <p>Easy Festive Wear</p>
+      <a href="https://www.instagram.com/hashstylesin" target="_blank">
+        <img src="assets/images/festive_wear.png" alt="Easy Festive Wear">
+        <p>Easy Festive Wear</p>
+      </a>
     </div>
     <div class="product">
-      <img src="assets/images/go_to_everyday.png" alt="Go-To Everyday">
-      <p>Go-To Everyday</p>
+      <a href="https://www.instagram.com/hashstylesin" target="_blank">
+        <img src="assets/images/go_to_everyday.png" alt="Go-To Everyday">
+        <p>Go-To Everyday</p>
+      </a>
     </div>
   </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/xkgreqqv" method="POST">
+    <div style="max-width: 400px; margin: auto; text-align: left;">
+      <label for="name">Name *</label><br>
+      <input type="text" id="name" name="name" required style="width: 100%; margin-bottom: 10px;"><br>
+
+      <label for="email">Email *</label><br>
+      <input type="email" id="email" name="_replyto" required style="width: 100%; margin-bottom: 10px;"><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" style="width: 100%; margin-bottom: 10px;"></textarea><br>
+
+      <button type="submit" class="btn">Send Message</button>
+    </div>
+  </form>
 </section>
 
 </body>
