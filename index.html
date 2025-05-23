@@ -82,12 +82,13 @@
     .features {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 80px;
       flex-wrap: wrap;
     }
 
-    .feature {
-      max-width: 200px;
+   .feature {
+     flex: 1 1 200px; /* ensures equal spacing across screen sizes */
+     text-align: center;
     }
 
     .icon {
